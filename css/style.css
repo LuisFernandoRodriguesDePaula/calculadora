@@ -1,7 +1,8 @@
 body{
-    height: 40rem;
-    width: 40rem;
+    height: 100vw;
+    width: 100vw;
     border: solid black 1px;
+    justify-content: stretch;
 }
 
 .calculadora{
@@ -23,10 +24,6 @@ body{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
-}
-
-.equal{
-    grid-column: span 4;
 }
 
 button{

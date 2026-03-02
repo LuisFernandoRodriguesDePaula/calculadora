@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="src/script.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
     <div class="calculadora">
         <!-- Display -->
-        <input type="text" id="display" disable>
-
+        <input type="text" id="display" disabled>
+        
         <!-- Botoes -->
-         <div class="botoes">
-
-         <button class="operator">%</button>
-         <button class="operator">CE</button>
-         <button class="operator">C</button>
-         <button class="clear">backspace</button>
-         
-         <button onclick="addValue('7')">7</button>
-         <button onclick="addValue('8')">8</button>
-         <button onclick="addValue('9')">9</button>
-         
-         <button class="operator">/</button>
-         
-         <button onclick="addValue('4')">4</button>
-         <button onclick="addValue('5')">5</button>
-         <button onclick="addValue('6')">6</button>
-         <button class="operator">x</button>
-         
-         <button onclick="addValue('1')">1</button>
-         <button onclick="addValue('2')">2</button>
-         <button onclick="addValue('3')">3</button>
-         
-         <button class="operator">-</button>
-
-         
-         <button class="operator">+/-</button>
-         <button onclick="addValue">('s')"0</button>
-         <button onclick="addValue">('s')".</button>
-         <button class="operator">+</button>
-
-         <button class="equal">=</button>
-         </div>
+        <div class="botoes">
+            
+            <!--<button onclick="addValue('7')">C</button>-->
+            
+            <button onclick="operador('/')">/</button>
+            <button onclick="operador('*')">x</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="apaga()">=D</button>
+            
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="operador('+')">+</button>
+            
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="operador('-')">-</button>
+            
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button class="equal" onclick="calculate()">=</button>
+            
+            <button onclick="negativo('+/-')">+/-</button>
+            <button class="zero" onclick="addValue('0')">0</button>
+            <button onclick="addValue('.')">.</button>
+            
+            
+        </div>
     </div>
+    <script src="src/script.js"></script>
 </body>
 </html>
